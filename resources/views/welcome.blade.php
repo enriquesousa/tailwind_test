@@ -20,6 +20,20 @@
 <body>
 
     {{-- Diseno 1 por bloques --}}
+    <div class="container">
+        <div class="grid grid-cols-4 grid-rows-2 gap-4">
+             <div class="bg-blue-200">A</div>
+             <div class="bg-blue-300">B</div>
+             <div class="bg-blue-400">C</div>
+             <div class="bg-blue-500">D</div>
+             <div class="bg-blue-600">E</div>
+             <div class="bg-blue-700">F</div>
+             <div class="bg-blue-800">G</div>
+             <div class="bg-blue-900">H</div>
+        </div>
+     </div>
+
+    {{-- Diseno 1 por bloques --}}
     {{-- <div class="container">
         <div class="grid grid-cols-4 grid-rows-2 gap-4">
              <div class="bg-blue-200">A</div>
@@ -73,8 +87,8 @@
         </div>
     </div> --}}
 
-    {{-- Tipografías en tailwind (Parte 1) --}}
-    <div class="container">
+    {{-- Tipografías en tailwind (Parte 0 - sin formato) --}}
+    {{-- <div class="container">
 
         <h1 class="">Esto es un título de prueba</h1>
 
@@ -86,7 +100,22 @@
             <li class="">Elemento #03</li>
         </ul>
 
-    </div>
+    </div> --}}
+
+    {{-- Tipografías en tailwind (Parte 1) --}}
+    {{-- <div class="container">
+
+        <h1 class="font-sans text-3xl font-bold mb-4">Esto es un título de prueba</h1>
+
+        <p class="font-serif leading-tight mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque. Numquam temporibus cumque natus impedit eveniet quibusdam architecto laboriosam aliquam, nostrum, animi perspiciatis? Culpa suscipit excepturi ipsam ipsa cum impedit!</p>
+
+        <ul>
+            <li class="font-mono text-sm italic">Elemento #01</li>
+            <li class="font-mono text-sm italic">Elemento #02</li>
+            <li class="font-mono text-sm italic">Elemento #03</li>
+        </ul>
+
+    </div> --}}
 
     {{-- Usar nuestras propias fuentes (Parte 2) --}}
     {{-- <div class="container">
@@ -131,55 +160,81 @@
     </div> --}}
 
     {{-- Opciones de Background Degradado --}}
-    {{-- <div class="container">
+    <div class="container">
         <div class="bg-gradient-to-r from-blue-500 via-green-600 to-yellow-400 text-center font-extrabold text-5xl bg-clip-text text-transparent">
             Hola Mundo!
         </div>        
-    </div> --}}
+    </div>
 
     {{-- Bordes en Tailwind --}}
-    {{-- <div class="container mx-auto pt-5"> --}}
-        {{-- border con hover--}}
-        {{-- <div class="w-64 h-64 bg-gray-400 border-8 border-blue-800 hover:border-indigo-500">
-        </div> --}}
-        {{-- border left --}}
-        {{-- <div class="w-64 h-64 bg-gray-400 border-l-8 border-blue-800">
-        </div> --}}
-        {{-- border rounded lg --}}
-        {{-- <div class="w-64 h-64 bg-gray-400 border-8 border-blue-800 rounded-lg">
-        </div> --}}
-        {{-- border Circulo --}}
-        {{-- <div class="w-64 h-64 bg-gray-400 border-8 border-blue-800 rounded-full">
-        </div> --}}
-        {{-- border modificando el Circulo --}}
-        {{-- <div class="w-32 h-64 bg-gray-400 border-8 border-blue-800 rounded-full">
-        </div> --}}
-        {{-- border modificando el Circulo --}}
-        {{-- <div class="w-64 h-32 bg-gray-400 border-8 border-blue-800 rounded-full">
-        </div> --}}
+    <div class="container mx-auto pt-5">
+        
+
+        <div class="grid grid-cols-4 grid-rows-2 gap-4">
+            <div class="bg-yellow-200">
+                <div class="flex justify-center">
+                    {{-- border left --}}
+                    <div class="w-32 h-32 bg-gray-400 border-l-8 border-blue-800"></div>
+                </div>
+            </div>
+            <div class="bg-yellow-300">
+                <div class="flex justify-center">
+                    {{-- border rounded lg --}}
+                    <div class="w-32 h-32 bg-gray-400 border-8 border-blue-800 rounded-lg"></div>    
+                </div>
+            </div>
+            <div class="bg-yellow-400">
+                <div class="flex justify-center">
+                    {{-- border Circulo --}}
+                    <div class="w-32 h-32 bg-gray-400 border-8 border-blue-800 rounded-full"></div>
+                </div>
+            </div>
+            <div class="bg-yellow-500">
+                <div class="flex justify-center">
+                    {{-- border modificando el Circulo --}}
+                    <div class="w-16 h-32 bg-gray-400 border-8 border-blue-800 rounded-full"></div>
+                </div>
+            </div>
+            <div class="bg-yellow-600">
+                <div class="flex justify-center">
+                    {{-- border modificando el Circulo --}}
+                    <div class="w-64 h-32 bg-gray-400 border-8 border-blue-800 rounded-full"></div>
+                </div>
+            </div>
+            <div class="bg-yellow-700">
+                <div class="flex justify-center">
+                    {{-- border con hover--}}
+                    <div class="w-32 h-32 bg-gray-400 border-8 border-blue-800 hover:border-indigo-500"></div>
+                </div>
+            </div>
+            <div class="bg-yellow-800">G</div>
+            <div class="bg-yellow-900">H</div>
+       </div>
+        
         <div>
             {{-- agrega lineas divisorias con control de ancho de linea entre parrafos --}}
-            {{-- <div class="divide-y-4 divide-gray-600 divide-dotted">
+            <div class="divide-y-4 divide-gray-600 divide-dotted">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis blanditiis, neque harum hic qui ducimus delectus, dicta, mollitia culpa vero molestias. Ipsam ipsum ut mollitia officiis atque asperiores inventore numquam.</p>
                 <p>Sapiente, ut, sit doloribus soluta inventore enim repudiandae natus voluptas animi repellat nemo et minima dolor rem. Est, nihil odio doloribus libero placeat distinctio ut sunt facere ipsam eius dolor!</p>
                 <p>Corrupti recusandae perferendis nihil dolore error totam beatae doloremque deleniti? Dolores quasi deserunt accusamus quas, excepturi id, aspernatur quibusdam praesentium sapiente fuga voluptatibus illo consequatur laborum distinctio nisi explicabo! Odio?</p>
                 <p>Maxime consequatur aperiam ipsa dolorum quae eveniet incidunt tenetur, aspernatur illo voluptas excepturi corrupti expedita a repudiandae voluptatem id nemo animi molestiae, enim, eum quia. Laborum, aliquam. Commodi, nemo nobis.</p>
                 <p>Minima, tempore voluptate labore nobis explicabo laboriosam quam blanditiis incidunt repellendus quas quia nam corrupti distinctio in quisquam mollitia adipisci dolor sed? Officia eveniet accusantium recusandae, provident delectus fuga illum?</p>
-            </div> --}}
+            </div>
 
             {{-- menu de navegacion, usar(emet) a*5{Link $} --}}
-            {{-- <nav class="divide-x-2 divide-blue-600 mt-5">
+            <nav class="divide-x-2 divide-blue-600 mt-5">
                 <a href="">Link 1</a>
                 <a href="">Link 2</a>
                 <a href="">Link 3</a>
                 <a href="">Link 4</a>
                 <a href="">Link 5</a>
-            </nav> --}}
+            </nav>
         </div>
-    {{-- </div> --}}
+
+    </div>
     
     {{-- Tablas en Tailwind --}}
-    {{-- <div class="container">
+    <div class="container">
 
         <table class="table w-full border-separate lg:border-collapse table-fixed">
             <thead>
@@ -209,7 +264,7 @@
             </tbody>
         </table>
 
-    </div> --}}
+    </div>
 
 </body>
 </h

@@ -13,7 +13,7 @@
 [Curso CodersFree](https://codersfree.com/courses-status/curso-tailwind-desde-cero?current_id=44)
 
 **Carpeta:**
-/home/enrique/laravel/htdocs/VictorArana/Tailwind
+/home/enrique/laravel/homestead/pruebas/tailwind
 
 **Database:**
 database/database.sqlite
