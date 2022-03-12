@@ -162,7 +162,7 @@
     {{-- Opciones de Background Degradado --}}
     <div class="container">
         <div class="bg-gradient-to-r from-blue-500 via-green-600 to-yellow-400 text-center font-extrabold text-5xl bg-clip-text text-transparent">
-            Hola Mundo!
+            Hola Mundo! desde VM Windows
         </div>        
     </div>
 
