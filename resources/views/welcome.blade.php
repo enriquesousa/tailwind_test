@@ -73,8 +73,8 @@
         </div>
     </div> --}}
 
-    {{-- Tipografías en tailwind (Parte 1) --}}
-    <div class="container">
+    {{-- Tipografías en tailwind (Parte 0 - sin formato) --}}
+    {{-- <div class="container">
 
         <h1 class="">Esto es un título de prueba</h1>
 
@@ -84,6 +84,21 @@
             <li class="">Elemento #01</li>
             <li class="">Elemento #02</li>
             <li class="">Elemento #03</li>
+        </ul>
+
+    </div> --}}
+
+    {{-- Tipografías en tailwind (Parte 1) --}}
+    <div class="container">
+
+        <h1 class="font-sans text-3xl font-bold mb-4">Esto es un título de prueba</h1>
+
+        <p class="font-serif leading-tight mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, cumque. Numquam temporibus cumque natus impedit eveniet quibusdam architecto laboriosam aliquam, nostrum, animi perspiciatis? Culpa suscipit excepturi ipsam ipsa cum impedit!</p>
+
+        <ul>
+            <li class="font-mono text-sm italic">Elemento #01</li>
+            <li class="font-mono text-sm italic">Elemento #02</li>
+            <li class="font-mono text-sm italic">Elemento #03</li>
         </ul>
 
     </div>
